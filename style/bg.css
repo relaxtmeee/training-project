@@ -1,0 +1,25 @@
+.background{
+    width: 100%;
+    min-height: 130%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url("../images/bg.jpg") no-repeat;
+    background-size: cover;
+    z-index: 1;
+    background-position: 50% 50%;
+}
+.background2{
+    width: 100%;
+    min-height: 120%;
+    position: fixed;
+    top: 100%;
+    left: 0;
+    background: url("../images/bg.jpg") no-repeat;
+    background-size: cover;
+    z-index: 1;
+    background-position: 50% 50%;
+}
+
+
+

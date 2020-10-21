@@ -1,0 +1,142 @@
+.price {
+    height: 850px;
+    width: 100%;
+    background: white;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+}
+
+.price>.wrapper {
+    flex-direction: column;
+}
+
+.price__title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 100;
+
+    transition: all 1.2s ease 0s;
+    transform: translate(-120%, 0px);
+    opacity: 0;
+}
+
+.price__title.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.price__line {
+    height: 3px;
+    width: 100px;
+    background: #3eb0f7;
+    margin-bottom: 45px;
+
+    transition: all 1.2s ease 0s;
+    transform: translate(120%, 0px);
+    opacity: 0;
+}
+
+.price__line.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.price__items {
+    display: flex;
+}
+
+.price__item {
+    width: 250px;
+    height: auto;
+    padding: 10px;
+    border: 1px solid rgba(192, 192, 192, 0.568);
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+    border-radius: 2px;
+
+    transform: translate(0px, 120%);
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+}
+
+.price__items.active .price__item:nth-child(1) {
+    transition: all 0.8s ease 0s;
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.price__items.active .price__item:nth-child(2) {
+    transition: all 0.8s ease 0.2s;
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.price__items.active .price__item:nth-child(3) {
+    transition: all 0.8s ease 0.4s;
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.price__items.active .price__item:nth-child(4) {
+    transition: all 0.8s ease 0.6s;
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+
+.price__img img {
+    height: 90px;
+    width: 90px;
+}
+
+.price__itemTitle {
+    font-size: 1.7rem;
+}
+
+.numberPrice {
+    font-size: 3rem;
+    color: #3eb0f7;
+}
+
+.numberPriceSup {
+    font-size: 1.3rem;
+    font-weight: 100;
+    color: #777;
+}
+
+.price__discription {
+    width: 200px;
+    text-align: center;
+    line-height: 38px;
+}
+
+.price__itemLine {
+    height: 1px;
+    width: 200px;
+    background: rgba(192, 192, 192, 0.568);
+}
+
+.price__button {
+    color: white;
+    background: #3eaff6;
+    width: fit-content;
+    font-size: 1.1rem;
+    margin: 20px 0 0 0;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all 0.8s ease 0s;
+}
+
+.price__button:hover {
+    background: #459cd2;
+}

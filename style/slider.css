@@ -1,0 +1,122 @@
+.slider {
+    position: relative;
+    z-index: 3;
+    background: white;
+    color: #777;
+    padding: 50px;
+}
+
+
+.slider__title {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 100;
+    margin-top: 10px;
+
+
+    transition: all 1.2s ease 0s;
+    transform: translate(0px, 120%);
+    opacity: 0;
+}
+
+.slider__title.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.slider__line {
+    height: 3px;
+    width: 100px;
+    background: #3eb0f7;
+    margin: 25px 0;
+
+}
+
+.slider__container {
+    height: 100%;
+}
+
+.slick-slider {
+    position: relative;
+    overflow: hidden;
+
+    transition: all 1.2s ease 0s;
+    transform: translate(0px, 120%);
+    opacity: 0;
+}
+
+.slider__container.active .slick-slider {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick-dots li {
+    list-style: none;
+    margin: 10px 10px;
+}
+
+.slick-dots button {
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #3eb0f7;
+    border-radius: 6px;
+    opacity: 0.6;
+
+}
+
+.slick-dots li.slick-active button {
+    background-color: #3eb0f7;
+    opacity: 1;
+}
+
+.slick-dots button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.slider__item {
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+    text-align: center;
+
+}
+
+.slider__item img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    display: inline-block !important;
+}
+
+.slider__text {
+    max-width: 800px;
+    font-size: 1.3rem;
+    line-height: 28px;
+    font-style: italic;
+    font-weight: 100;
+    margin-bottom: 30px;
+    cursor: move
+}
+
+.slider__item.slick-center {
+    opacity: 1;
+}

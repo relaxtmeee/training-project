@@ -1,0 +1,64 @@
+.footer {
+    background: white;
+    widows: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.footer a {
+    transition: all 1.2s ease 0s;
+    transform: translate(0px, 120%);
+    opacity: 0;
+}
+
+.footer.active a:nth-child(1) {
+    transition: all 1.2s ease 0s;
+}
+
+.footer.active a:nth-child(2) {
+    transition: all 1.2s ease 0.2s;
+}
+
+.footer.active a:nth-child(3) {
+    transition: all 1.2s ease 0.4s;
+}
+
+.footer.active a:nth-child(4) {
+    transition: all 1.2s ease 0.6s;
+}
+
+.footer.active a {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.socialNetwork {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #3eb0f7;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 0 10px;
+    transition: all 0.8s ease 0s;
+}
+
+.footer svg {
+    width: 20px;
+    height: 20px;
+}
+
+.socialNetwork:hover {
+    /* background: #459cd2; */
+    background: #3eb0f7;
+}
+
+.socialNetwork:hover>svg>g {
+    fill: white;
+    transition: all 0.8s ease 0s;
+}

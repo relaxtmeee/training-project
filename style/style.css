@@ -1,0 +1,40 @@
+@import url("./bg.css");
+@import url("./header.css");
+@import url("./nav.css");
+@import url("./aboutUs.css");
+@import url("./advantages.css");
+@import url("./order.css");
+@import url("./price.css");
+@import url("./client.css");
+@import url("./backForm.css");
+@import url("./slider.css");
+@import url("./footer.css");
+@import url("./media.css");
+@import url("./menuBurger.css");
+@import url("./fixedButton.css");
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+    outline: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

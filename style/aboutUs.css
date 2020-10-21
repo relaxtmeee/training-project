@@ -1,0 +1,81 @@
+.aboutUs {
+    width: 100%;
+    height: auto;
+    background: white;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.aboutUsActive {
+    padding-top: 125px;
+}
+
+.aboutUs>.wrapper {
+    align-items: flex-start;
+}
+
+.aboutUs__img {
+    width: 50%;
+
+    transform: translate(-120%, 0px);
+    opacity: 0;
+    transition: all 1.2s ease 0s;
+}
+
+.aboutUs__img.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.aboutUs__img img {
+    width: 100%;
+    height: 350px;
+    border-radius: 3px;
+}
+
+.aboutUs__discription {
+    width: 50%;
+    padding-left: 30px;
+    color: #777;
+
+    transform: translate(120%, 0px);
+    opacity: 0;
+    transition: all 1.2s ease 0s;
+}
+
+.aboutUs__discription.active {
+    transform: translate(0, 0px);
+    opacity: 1;
+}
+
+.aboutUs__discription h1 {
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin: 0px 0px 20px 0px;
+}
+
+.aboutUs__text {
+    line-height: 27px;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.aboutUs__button {
+    width: fit-content;
+    color: #3eb0f7;
+    font-size: 1.5rem;
+    border: 3px solid #3eb0f7;
+    border-radius: 50px;
+    padding: 15px 30px;
+    margin-top: 20px;
+    transition: all 0.8s ease 0s;
+}
+
+.aboutUs__button:hover {
+    background: #3eaff6;
+    color: white;
+}

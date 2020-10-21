@@ -1,0 +1,54 @@
+nav {
+    height: 50px;
+    background: white;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    border-bottom: 1px solid #77777740;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu img {
+    height: 35px;
+    margin-right: 280px;
+}
+
+.menu__menu>a {
+    color: #777;
+    font-size: 1.2rem;
+    margin: 0px 13px;
+    width: fit-content;
+    transition: all 0.5s ease 0s;
+}
+
+.menu a:hover {
+    color: #3eaff6;
+}
+
+.navActive {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+.menu__menuActive {
+    left: 0 !important;
+    z-index: 10;
+}
+
+.activeLink {
+    color: #3eaff6 !important;
+}
